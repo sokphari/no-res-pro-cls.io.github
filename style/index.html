@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style css  -->
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(201, 153, 153);
+
+            header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 8%;
+                background-color: rgb(224, 222, 222);
+                display: flex;
+                align-items: center;
+
+                .logo {
+                    width: 20.3%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    div {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                }
+
+                .menu {
+                    width: 55.3%;
+                    height: 100%;
+
+                    ul {
+                        width: 85%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+                        li {
+                            list-style-type: none;
+
+                            a {
+                                text-decoration: none;
+                                font-size: 18px;
+                                color: rgb(0, 0, 0);
+                                font-weight: 500;
+                                text-transform: uppercase;
+
+                            }
+                        }
+                    }
+                }
+
+                .btn {
+                    width: 20.3%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 10px 0 10px;
+
+                    .btn-1 {
+                        width: 120px;
+                        height: 45px;
+                        font-size: 16px;
+                        border-radius: 20px;
+                        border: none;
+                        color: white;
+                        background-color: rgb(234, 149, 21);
+                        margin-right: 10px;
+                    }
+
+                    .btn-2 {
+                        width: 120px;
+                        height: 45px;
+                        font-size: 16px;
+                        border-radius: 20px;
+                        border: none;
+                        color: rgb(0, 0, 0);
+                        background-color: rgb(255, 255, 255);
+                    }
+                }
+            }
+
+            /* section-1  */
+            .sec-1 {
+                width: 100%;
+                height: 100%;
+                background-image: url("/asset/bg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                article {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    .art {
+                        width: 100%;
+                        height: 25%;
+
+                        h1 {
+                            text-align: center;
+                            font-size: 50px;
+                            color: white;
+                        }
+
+                        p {
+                            text-align: center;
+                            color: white;
+                            margin: 10px;
+                        }
+
+                        .lay-btn {
+                            width: 100%;
+                            height: 50px;
+                            display: flex;
+                            justify-content: center;
+
+                            .center {
+                                margin-top: 15px;
+
+                                .btn-3 {
+                                    width: 130px;
+                                    height: 45px;
+                                    border: none;
+                                    font-size: 14px;
+                                    border-radius: 20px;
+                                    margin-left: 10px;
+                                    color: white;
+                                    background-color: rgb(234, 149, 21);
+                                }
+
+                                .btn-4 {
+                                    width: 130px;
+                                    height: 45px;
+                                    font-size: 14px;
+                                    background-color: rgba(255, 255, 255, 0);
+                                    color: aliceblue;
+                                    border-radius: 20px;
+                                    margin-left: 10px;
+                                    border: 2px solid white;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* section-2  */
+            .sec-2 {
+                width: 100%;
+                height: 90%;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h1 {
+                    text-align: center;
+                    padding-top: 20px;
+                    font-size: 30px;
+                }
+
+                .lay-img {
+                    width: 100%;
+                    height: 90%;
+                    /* background-color: blue; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .for-img {
+                        padding-top: 25px;
+                        width: 70%;
+                        height: 90%;
+
+                        /* background-color: blueviolet; */
+                        .div-1 {
+                            width: 100%;
+                            height: 35%;
+                            /* background-color: brown; */
+                            display: flex;
+
+                            .img-1 {
+                                width: 50%;
+                                height: 100%;
+                                box-shadow: 1px 1px 4px rgb(219, 214, 214);
+                                /* background-color: yellow; */
+
+                                display: flex;
+                                align-items: center;
+                                padding: 0 20px;
+
+                                img {
+                                    width: 150px;
+                                    height: 150px;
+                                    border-radius: 50%;
+                                }
+
+                                article {
+                                    margin-left: 20px;
+
+                                    h2 {
+                                        margin-top: 10px;
+                                    }
+
+                                    .page {
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+
+                            .img-2 {
+                                margin-left: 30px;
+                                width: 50%;
+                                height: 100%;
+                                box-shadow: 1px 1px 4px rgb(219, 214, 214);
+                                display: flex;
+                                align-items: center;
+                                padding: 0 20px;
+
+                                img {
+                                    width: 150px;
+                                    height: 150px;
+                                    border-radius: 50%;
+                                }
+
+                                article {
+                                    margin-left: 20px;
+
+                                    h2 {
+                                        margin-top: 10px;
+                                    }
+
+                                    .page {
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .div-2 {
+                            margin-top: 30px;
+                            width: 100%;
+                            height: 35%;
+                            /* background-color: brown; */
+                            display: flex;
+
+                            .img-1 {
+                                width: 50%;
+                                height: 100%;
+                                box-shadow: 1px 1px 4px rgb(219, 214, 214);
+                                display: flex;
+                                align-items: center;
+                                padding: 0 20px;
+
+                                img {
+                                    width: 150px;
+                                    height: 150px;
+                                    border-radius: 50%;
+                                }
+
+                                article {
+                                    margin-left: 20px;
+
+                                    h2 {
+                                        margin-top: 10px;
+                                    }
+
+                                    .page {
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+
+                            .img-2 {
+                                margin-left: 30px;
+                                width: 50%;
+                                height: 100%;
+                                box-shadow: 1px 1px 4px rgb(219, 214, 214);
+                                display: flex;
+                                align-items: center;
+                                padding: 0 20px;
+
+                                img {
+                                    width: 150px;
+                                    height: 150px;
+                                    border-radius: 50%;
+                                }
+
+                                article {
+                                    margin-left: 20px;
+
+                                    h2 {
+                                        margin-top: 10px;
+                                    }
+
+                                    .page {
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* section-3 */
+            .sec-3 {
+                width: 100%;
+                height: 50%;
+                background-color: rgb(230, 159, 54);
+                color: white;
+
+                h1 {
+                    text-align: center;
+                    font-size: 45px;
+                    color: black;
+                    padding-top: 70px;
+                }
+
+                p {
+                    text-align: center;
+                    padding-top: 30px;
+                    font-size: 18px;
+                }
+
+                div {
+                    width: 100%;
+                    height: 55%;
+                    display: flex;
+                    justify-content: center;
+
+                    form {
+                        width: 50%;
+                        height: 50px;
+                        margin-top: 40px;
+                        display: flex;
+                        justify-content: center;
+
+                        .btn-btn {
+                            width: 150px;
+                            border-radius: 20px;
+                            color: white;
+                            font-size: 18px;
+                            background-color: rgba(240, 248, 255, 0);
+                            border: 2px solid white;
+                            font-weight: bold;
+                            /* <-- added white border */
+                        }
+                    }
+                }
+            }
+
+            /* section-4  */
+            .photos {
+                width: 100%;
+                height: 100%;
+                background-color: white;
+
+                h1 {
+                    text-align: center;
+                    padding-top: 60px;
+                    font-size: 40px;
+                }
+
+                .divv {
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .back {
+                        width: 80%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .pic-back {
+                            width: 100%;
+                            height: 50%;
+
+                            display: flex;
+
+                            .img-1 {
+                                width: 33.3%;
+                                height: 100%;
+
+                                img {
+                                    width: 90%;
+                                    height: 90%;
+                                    object-fit: cover;
+                                    border-radius: 15px;
+
+                                }
+                            }
+
+                            .img-2 {
+                                width: 33.3%;
+                                height: 100%;
+
+                                img {
+                                    width: 90%;
+                                    height: 90%;
+                                    object-fit: cover;
+                                    border-radius: 15px;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .img-3 {
+                                width: 33.3%;
+                                height: 100%;
+
+                                img {
+                                    width: 90%;
+                                    height: 90%;
+                                    object-fit: cover;
+                                    border-radius: 15px;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                        }
+
+                        .pic-backk {
+                            width: 100%;
+                            height: 50%;
+
+                            display: flex;
+
+                            .img-1 {
+                                width: 33.3%;
+                                height: 100%;
+
+                                img {
+                                    width: 90%;
+                                    height: 90%;
+                                    object-fit: cover;
+                                    border-radius: 15px;
+
+                                }
+                            }
+
+                            .img-2 {
+                                width: 33.3%;
+                                height: 100%;
+
+                                img {
+                                    width: 90%;
+                                    height: 90%;
+                                    object-fit: cover;
+                                    border-radius: 15px;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .img-3 {
+                                width: 33.3%;
+                                height: 100%;
+
+                                img {
+                                    width: 90%;
+                                    height: 90%;
+                                    object-fit: cover;
+                                    border-radius: 15px;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
+            /* section-5  */
+            section {
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            .projects-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .projects-container img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .contact-form {
+                max-width: 500px;
+                margin: 0 auto;
+                background: #f2f5f4;
+                padding: 30px;
+                border-radius: 10px;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%;
+                padding: 12px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+            .contact-form button {
+                background: #f4a000;
+                color: white;
+                border: none;
+                padding: 12px 20px;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            footer {
+                background: #111;
+                color: white;
+                padding: 40px 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                text-align: left;
+            }
+
+            footer h3 {
+                color: white;
+                margin-bottom: 15px;
+            }
+
+            footer ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            footer ul li {
+                margin: 8px 0;
+            }
+
+            footer a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .footer-section {
+                flex: 1;
+                min-width: 250px;
+                margin: 10px;
+            }
+        }
+    </style>
+    <main>
+        <!-- header  -->
+        <header>
+            <nav class="logo">
+                <div>LOGO</div>
+            </nav>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our team</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <nav class="btn">
+                <button class="btn-1" type="button">Sign In</button>
+                <button class="btn-2" type="button">Sign Up</button>
+            </nav>
+        </header>
+        <!-- end of header  -->
+
+        <!-- main-header  -->
+        <section class="sec-1">
+            <article>
+                <div class="art">
+                    <h1>Our Team</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fuga quis nihil omnis perferendis
+                        illo velit ea eveniet a deserunt.</p>
+                    <div class="lay-btn">
+                        <div class="center">
+                            <button class="btn-3" type="button">OUT SISSION</button>
+                            <button class="btn-4" type="button">DONATE NOW</button>
+                        </div>
+                    </div>
+            </article>
+        </section>
+        <!-- end of main header  -->
+
+        <!-- image team us  -->
+        <section class="sec-2">
+            <h1>United States Teame</h1>
+            <div class="lay-img">
+                <div class="for-img">
+                    <div class="div-1">
+                        <div class="img-1">
+                            <div>
+                                <img src="/asset/girl1.jpg" alt="">
+                            </div>
+                            <article>
+                                <p>founder/presedent</p>
+                                <h2>bob Brown</h2>
+                                <p class="page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                    quaerat. Nemo distinctio maiores officiis esse beatae blanditiis fuga incidunt
+                                    perspiciatis.</p>
+                            </article>
+                        </div>
+                        <div class="img-2">
+                            <div>
+                                <img src="/asset/boy1.jpg" alt="">
+                            </div>
+                            <article>
+                                <p>founder/presedent</p>
+                                <h2>bob Brown</h2>
+                                <p class="page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                    quaerat. Nemo distinctio maiores officiis esse beatae blanditiis fuga incidunt
+                                    perspiciatis.</p>
+                            </article>
+
+                        </div>
+                    </div>
+                    <div class="div-2">
+                        <div class="img-1">
+                            <div>
+                                <img src="/asset/boy.jpg" alt="">
+                            </div>
+                            <article>
+                                <p>founder/presedent</p>
+                                <h2>bob Brown</h2>
+                                <p class="page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                    quaerat. Nemo distinctio maiores officiis esse beatae blanditiis fuga incidunt
+                                    perspiciatis.</p>
+                            </article>
+                        </div>
+                        <div class="img-2">
+                            <div>
+                                <img src="/asset/girl.jpg" alt="">
+                            </div>
+                            <article>
+                                <p>founder/presedent</p>
+                                <h2>bob Brown</h2>
+                                <p class="page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                    quaerat. Nemo distinctio maiores officiis esse beatae blanditiis fuga incidunt
+                                    perspiciatis.</p>
+                            </article>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- end of image team  -->
+
+        <!-- text-sec  -->
+        <section class="sec-3">
+            <h1>
+                Become a volanteer
+            </h1>
+            <p>
+                simple text.click to select the text element.
+            </p>
+            <div>
+                <form action="#">
+                    <button class="btn-btn" type="button">JOIN US</button>
+                </form>
+            </div>
+        </section>
+        <!-- end of sec text  -->
+
+        <!-- photo-6  -->
+        <section class="sec-pho">
+            <h2>Recent Projects</h2>
+            <div class="projects-container">
+                <img src="/asset/project-img01.webp" alt="">
+                <img src="/asset/project-img02.webp" alt="">
+                <img src="/asset/project-img03.webp" alt="">
+                <img src="/asset/project-img04.webp" alt="">
+                <img src="/asset/project-img05.webp" alt="">
+                <img src="/asset/project-img06.webp" alt="">
+            </div>
+        </section>
+        <!-- end of photo  -->
+
+        <!-- section label  -->
+        <section class="sec-label">
+            <div class="contact-form">
+                <h2>Get in touch</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Enter your Name" required />
+                    <input type="email" name="email" placeholder="Enter a valid email address" required />
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </section>
+        <!-- end of label  -->
+
+        <!-- section fooder  -->
+        <footer class="sec-last-one">
+            <div class="footer-section">
+                <h3>LOGO</h3>
+                <p>Our approach prioritizes quality over quantity, ensuring that charity work is rooted in compassion
+                    and respect, preserving the dignity of those we serve.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get In Touch</h3>
+                <p>example@gmail.com</p>
+                <p>+855 000-0000-00</p>
+            </div>
+        </footer>
+        <!-- end of footer  -->
+    </main>
+</body>
+
+</html>
